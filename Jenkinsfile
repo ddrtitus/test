@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Example') {
             steps {
-                echo "${params.Greeting}" World!"
+                echo "${params.Greeting} World!"
                 echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
             }
         }
