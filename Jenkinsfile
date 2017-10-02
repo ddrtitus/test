@@ -1,6 +1,7 @@
+#!/usr/bin/env groovy
 pipeline {
     agent { docker 'python:3.5.1' }
-    pamemeters {
+    parameters {
         string(name: 'Greeting', defaultValue: 'Hello', description: 'How should I greet the world?')
     }
     stages {
